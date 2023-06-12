@@ -1,0 +1,399 @@
+/*========================================================================================================
+                DEFAULT VALUES:
+                
+                Font Family:               : Roboto Condensed
+
+                Greenish Blue:             : #34C6D3         (Buttons, Icon, Links & Background)
+                Steel Grey                 : #41464B         (Headings)
+                Blue Bayoux                : #64707B         (Paragraphs)
+                White                      : #FFF            (Text With Black Backgrounds)
+                Black                      : #000
+
+==========================================================================================================*/
+
+/* General CSS */
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif
+}
+
+p {
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300
+}
+
+h3 {
+    color: #41464B;
+    text-transform: uppercase
+}
+
+/*=============================================================
+                            HOME
+===============================================================*/
+
+#home {
+    height: 100%
+}
+
+#home-cover {
+    background: url("../imgs/bg-home.jpg");
+    height: 100%
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle
+    /* text-align: center */
+}
+
+#home-heading h3 {
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0
+}
+
+/*=============================================================
+                            PARALLAX (Generic)
+===============================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important
+}
+
+/*=============================================================
+                            BUTTONS (Generic)
+===============================================================*/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.btn-white {
+    border-color: #FFF;
+    color: #FFF
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #FFF;
+    color: #41464B
+}
+
+.btn-blue {
+    border-color: #34C6D3;
+    color: #34C6D3
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34C6D3;
+    color: #FFF
+}
+
+/*=============================================================
+                            ANIMATE
+===============================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s
+}
+
+#home-cover {
+    animation-delay: .1s
+}
+
+#home-heading {
+    animation-delay: .5s
+}
+
+#home-btn {
+    animation-delay: 1s
+}
+
+/*=============================================================
+                            Content (Generic)
+===============================================================*/
+
+.content-box {
+    padding: 60px 0
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.content-title-white h3 {
+    color: #FFF
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34C6D3;
+    margin: 0 auto 40px auto
+}
+
+/*=============================================================
+                            SERVICES
+===============================================================*/
+
+.service-item {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i {
+    color: #34C6D3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center
+}
+
+.service-item:hover .service-item-icon i {
+    color: #FFF;
+    background-color: #34C6D3
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400px;
+    margin: 0 0 10px 0
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px
+}
+
+/*=============================================================
+                            ABOUT
+===============================================================*/
+
+#about-bg-diagonal {
+    float: right;
+    width: 60%;
+    height: 700px;
+    background-image: url(../imgs/bg-about.jpg);
+    border-left: 200px solid #FFF;
+    border-top: 700px solid transparent
+}
+
+#about-content-box {
+    float: left;
+    height: 700px
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle
+}
+
+#about .content-title h3 {
+    text-align: left
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0
+}
+
+#about-desc p {
+    margin-bottom: 30px
+}
+
+/*=============================================================
+                            WORK
+===============================================================*/
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.img-wrapper {
+    overflow: hidden
+}
+
+.img-wrapper img {
+    transition: transform .5s ease
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in
+}
+
+/*=============================================================
+                            TEAM
+===============================================================*/
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 15px
+}
+
+.team-member-position {
+    color: #34C6D3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px
+}
+
+/*=============================================================
+                            SOCIAL
+===============================================================*/
+
+.social-list {
+    padding-left: 0
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px
+}
+
+.social-icon i {
+    font-size: 17px
+}
+
+.icon-gray i {
+    color: #64707B
+}
+
+.social-icon i:hover {
+    color: #34C6D3
+}
+
+/*=============================================================
+                            TESTIMONIALS
+===============================================================*/
+
+#tstim-cover {
+    background: url(../imgs/bg-testimonials.jpg);
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#customers-testim {
+    padding: 50px 0
+}
+
+.testim img {
+    max-width: 120px;
+    margin: 0 auto
+}
+
+.testim blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #FFF;
+    padding: 6px 150px;
+    position: relative
+}
+
+.testim blockquote p {
+    color: #FFF
+}
+
+.testim blockquote:before,
+.testim blockquote:after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testim blockquote:before {
+    content: "\201C";
+    top: 0;
+    left: 100px
+}
+
+.testim blockquote:after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px
+}
+
+.testim-author p {
+    color: #FFF;
+    font-size: 17px
+}
+
+.testim-author p strong {
+    display: block
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
